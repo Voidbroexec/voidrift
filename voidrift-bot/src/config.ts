@@ -8,7 +8,7 @@ export const config: BotConfig =
     token: process.env.DISCORD_TOKEN ?? '',
     ownerId: process.env.OWNER_ID ?? '',
     prefix: process.env.PREFIX ?? '!',
-    embedColor: process.env.EMBED_COLOR ?? '#4B006E', 
+    embedColor: process.env.EMBED_COLOR ?? '#2d0036',
     presence: 
     {
         status: 'online',

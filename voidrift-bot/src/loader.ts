@@ -28,7 +28,7 @@ export class Loader
       for (const category of categories) {
         const categoryPath = join(commandsPath, category);
         const commandFiles = readdirSync(categoryPath).filter(file =>
-          file.endsWith('.js') || file.endsWith('.ts')
+          file.endsWith('.js')
         );
 
         for (const file of commandFiles) 
@@ -71,7 +71,7 @@ export class Loader
     try 
     {
       const eventFiles = readdirSync(eventsPath).filter(file =>
-        file.endsWith('.js') || file.endsWith('.ts')
+        file.endsWith('.js')
       );
 
       for (const file of eventFiles) 
@@ -121,7 +121,9 @@ export class Loader
       for (const category of categories) 
       {
         const categoryPath = join(commandsPath, category);
-        const commandFiles = readdirSync(categoryPath);
+        const commandFiles = readdirSync(categoryPath).filter(file =>
+          file.endsWith('.js')
+        );
         
         for (const file of commandFiles) 
         {
