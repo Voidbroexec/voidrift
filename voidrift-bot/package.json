@@ -1,0 +1,33 @@
+
+{
+  "name": "voidrift-bot",
+  "version": "1.0.0",
+  "description": "A modular Discord bot with dynamic command loading",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": ["discord", "bot", "typescript", "modular"],
+  "author": "Void",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "14.21.0",
+    "dotenv": "17.0.1",
+    "chalk": "5.4.1",
+    "axios": "1.10.0",
+    "node-fetch": "3.3.2",
+    "fs-extra": "11.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.10",
+    "@types/fs-extra": "11.0.4",
+    "typescript": "5.8.3",
+    "ts-node": "10.9.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
