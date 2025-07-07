@@ -55,7 +55,7 @@ voidrift-bot/
 1. **Clone the repository**
    ```bash
 
-   git clone https://github.com/Voidbroexec/voidrift-bot.git
+   git clone https://github.com/Voidbroexec/voidrift.git
    cd voidrift-bot
    ```
 
