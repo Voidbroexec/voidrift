@@ -5,6 +5,7 @@ import { VoidriftClient } from '../client';
 import { config } from '../config';
 import { Logger } from '../utils/logger';
 import { PermissionChecker } from '../utils/permcheck';
+import { automationConfig } from '../utils/automationConfig';
 
 const message: Event = 
 {
@@ -24,10 +25,16 @@ const message: Event =
     if (!commandName) return;
 
     // Find command (check both commands and aliases)
-    const command = client.commands.get(commandName) ?? 
+    const command = client.commands.get(commandName) ??
                    client.commands.get(client.aliases.get(commandName) ?? '');
 
-    if (!command) return;
+    if (!command) {
+      const macro = automationConfig.macros[commandName];
+      if (macro) {
+        await message.reply(macro);
+      }
+      return;
+    }
 
     try 
     {
