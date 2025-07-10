@@ -1,6 +1,5 @@
-
 import { EmbedBuilder,ColorResolvable  } from 'discord.js';
-import { Command } from '../../types/command';
+import { Command, CommandExecuteOptions } from '../../types/command';
 import { config } from '../../config';
 
 const help: Command = 
@@ -10,17 +9,16 @@ const help: Command =
     name: 'help',
     description: 'Display bot commands and information',
     category: 'utility',
-    aliases: ['h', 'commands'],
-    usage: 'help [command]',
-    examples: ['help', 'help ping']
+    usage: '/help [command]'
   },
   
-  execute: async ({ client, message, args }) => 
+  execute: async ({ client, message, args }: CommandExecuteOptions) => 
   {
     if (!message) return;
 
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setAuthor({ 
         name: `${client.user?.username} Commands`,
         iconURL: client.user?.displayAvatarURL()
@@ -42,24 +40,24 @@ const help: Command =
         return;
       }
 
-      embed.setTitle(`Command: ${command.options.name}`)
+      embed.setTitle(`Command: /${command.options.name}`)
         .setDescription(command.options.description)
         .addFields
         (
           { name: 'Category', value: command.options.category, inline: true },
-          { name: 'Usage', value: `\`${config.prefix}${command.options.usage ?? command.options.name}\``, inline: true }
+          { name: 'Usage', value: `\`/${command.options.usage ?? command.options.name}\``, inline: true }
         );
 
       if (command.options.aliases && command.options.aliases.length > 0) 
       {
-        embed.addFields({ name: 'Aliases', value: command.options.aliases.map(a => `\`${a}\``).join(', '), inline: true });
+        embed.addFields({ name: 'Aliases', value: command.options.aliases?.map((a: string) => `/${a}`).join(', ') || 'None', inline: true });
       }
 
       if (command.options.examples && command.options.examples.length > 0) 
       {
         embed.addFields({ 
           name: 'Examples', 
-          value: command.options.examples.map(ex => `\`${config.prefix}${ex}\``).join('\n') 
+          value: command.options.examples?.map((ex: string) => `/${ex}`).join('\n') || 'None' 
         });
       }
 
@@ -81,7 +79,7 @@ const help: Command =
     // Show all commands organized by category
     const categories = new Map<string, Command[]>();
     
-    client.commands.forEach(cmd =>
+    client.commands.forEach((cmd: any) =>
     {
       if (!categories.has(cmd.options.category)) {
         categories.set(cmd.options.category, []);
@@ -89,12 +87,12 @@ const help: Command =
       categories.get(cmd.options.category)!.push(cmd);
     });
 
-    embed.setDescription(`Use \`${config.prefix}help [command]\` for detailed information about a command.`);
+    embed.setDescription('Use `/help [command]` for detailed information about a command.');
 
     categories.forEach((commands, category) => 
     {
       const commandList = commands
-        .map(cmd => `\`${cmd.options.name}\``)
+        .map(cmd => `/${cmd.options.name}`)
         .join(', ');
       
       embed.addFields({ 
@@ -107,7 +105,7 @@ const help: Command =
     embed.addFields(
     { 
       name: 'Bot Information',
-      value: `• Total Commands: ${client.commands.size}\n• Prefix: \`${config.prefix}\`\n• Guilds: ${client.guilds.cache.size}`
+      value: `• Total Commands: ${client.commands.size}\n• Use the Discord slash command menu (type /)`
     });
 
     await message.reply({ embeds: [embed] });

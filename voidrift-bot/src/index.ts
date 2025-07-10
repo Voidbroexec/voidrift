@@ -4,7 +4,11 @@ import { Loader } from './loader';
 import { validateConfig } from './config'; 
 import { Logger } from './utils/logger';
 
-// ASCII Art Banner
+// Entry point for the VoidRift Discord bot.
+// This file initializes the bot, loads commands/events, and starts the client.
+// If you want to change how the bot boots up, start here!
+
+// Import the ASCII banner and dependencies
 const banner = `
 ╔════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                ║
@@ -22,10 +26,11 @@ const banner = `
 
 async function main() 
 {
-  // Display banner
+  // Display banner in the console and logs
   console.log(banner);
+  Logger.banner(banner);
   
-  // Validate configuration
+  // Validate configuration before starting
   if (!validateConfig()) 
   {
     Logger.error('Configuration validation failed! Please check your .env file.');
@@ -34,16 +39,16 @@ async function main()
 
   try 
   {
-    // Initialize client
+    // Initialize the Discord client and loader
     const client = new VoidriftClient();
     const loader = new Loader(client);
 
-    // Load commands and events
+    // Load all commands and events dynamically
     Logger.info('Loading commands and events...');
     await loader.loadCommands();
     await loader.loadEvents();
 
-    // Handle process termination
+    // Handle process termination and errors gracefully
     process.on('SIGINT', async () => 
     {
       Logger.info('Received SIGINT, shutting down gracefully...');
@@ -72,7 +77,7 @@ async function main()
     );
     });
 
-    // Start the bot
+    // Start the bot (login to Discord)
     await client.start();
 
   } catch (error) 
@@ -82,7 +87,7 @@ async function main()
   }
 }
 
-// Start the application
+// Start the bot
 main().catch(error => 
 {
   Logger.error(`Failed to start application: ${error}`);

@@ -1,6 +1,5 @@
-
 import { EmbedBuilder, User,ColorResolvable  } from 'discord.js';
-import { Command } from '../../types/command';
+import { Command, CommandExecuteOptions } from '../../types/command';
 import { config } from '../../config';
 
 const userinfo: Command = 
@@ -10,13 +9,11 @@ const userinfo: Command =
     name: 'userinfo',
     description: 'Get information about a user',
     category: 'utility',
-    aliases: ['user', 'ui', 'whois'],
-    usage: 'userinfo [@user]',
-    examples: ['userinfo', 'userinfo @john'],
+    usage: '/userinfo [@user]',
     guildOnly: true
   },
   
-  execute: async ({ client, message, args }) => 
+  execute: async ({ message, client, args }: CommandExecuteOptions) => 
   {
     if (!message?.guild) return;
 
@@ -43,8 +40,9 @@ const userinfo: Command =
 
     const member = await message.guild.members.fetch(targetUser.id).catch(() => null);
     
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setTitle(`${targetUser.tag}`)
       .setThumbnail(targetUser.displayAvatarURL({ size: 256 }))
       .addFields(

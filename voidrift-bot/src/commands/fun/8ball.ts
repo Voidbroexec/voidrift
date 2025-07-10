@@ -1,6 +1,5 @@
-
 import { EmbedBuilder,ColorResolvable  } from 'discord.js';
-import { Command } from '../../types/command';
+import { Command, CommandExecuteOptions } from '../../types/command';
 import { config } from '../../config';
 
 const eightball: Command = 
@@ -15,7 +14,7 @@ const eightball: Command =
     examples: ['8ball Will it rain tomorrow?', '8ball Should I learn TypeScript?']
   },
   
-  execute: async ({ message, args }) => 
+  execute: async ({ message, args }: CommandExecuteOptions) => 
     {
     if (!message || !args || args.length === 0) 
     {
@@ -50,8 +49,9 @@ const eightball: Command =
     const question = args.join(' ');
     const answer = responses[Math.floor(Math.random() * responses.length)];
 
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setTitle('🎱 Magic 8-Ball')
       .addFields
       (

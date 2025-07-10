@@ -1,0 +1,21 @@
+# Node modules and build output
+node_modules/
+dist/
+
+# Environment and secrets
+.env
+
+# Data and logs (do not commit sensitive data)
+data/
+logs/
+
+# OS/IDE files
+.DS_Store
+*.swp
+*.swo
+.vscode/
+
+# Backup/archives
+*.bak
+*.zip
+archive/ 

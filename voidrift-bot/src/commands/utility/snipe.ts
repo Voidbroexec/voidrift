@@ -1,5 +1,5 @@
 import { EmbedBuilder, ColorResolvable } from 'discord.js';
-import { Command } from '../../types/command';
+import { Command, CommandExecuteOptions } from '../../types/command';
 import { config } from '../../config';
 import { getSnipes } from '../../utils/snipeStore';
 
@@ -12,7 +12,7 @@ const snipe: Command = {
     ownerOnly: true
   },
 
-  execute: async ({ message }) => {
+  execute: async ({ message }: CommandExecuteOptions) => {
     if (!message) return;
 
     const snipes = getSnipes(message.channelId);
@@ -22,8 +22,9 @@ const snipe: Command = {
       return;
     }
 
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setTitle('Sniped Message')
       .setDescription(last.content)
       .setFooter({ text: `Deleted by ${last.author}` })

@@ -1,6 +1,5 @@
-
 import { EmbedBuilder, ChannelType, ColorResolvable, } from 'discord.js'; 
-import { Command } from '../../types/command';
+import { Command, CommandExecuteOptions } from '../../types/command';
 import { config } from '../../config';
 
 const serverinfo: Command = 
@@ -14,7 +13,7 @@ const serverinfo: Command =
     guildOnly: true
   },
   
-  execute: async ({ message }) => 
+  execute: async ({ message, client }: CommandExecuteOptions) => 
   {
     if (!message?.guild) return;
 
@@ -25,8 +24,9 @@ const serverinfo: Command =
     const voiceChannels = guild.channels.cache.filter(c => c.type === ChannelType.GuildVoice).size;
     const categories = guild.channels.cache.filter(c => c.type === ChannelType.GuildCategory).size;
     
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setTitle(`📋 ${guild.name}`)
       .setThumbnail(guild.iconURL({ size: 256 }))
       .addFields

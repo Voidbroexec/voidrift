@@ -1,4 +1,3 @@
-
 import { EmbedBuilder,ColorResolvable  } from 'discord.js';
 import { Command } from '../../types/command';
 import { config } from '../../config';
@@ -23,8 +22,9 @@ const ping: Command =
     const botLatency = sent.createdTimestamp - message.createdTimestamp;
     const apiLatency = Math.round(client.ws.ping);
 
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setTitle('🏓 Pong!')
       .addFields
       (

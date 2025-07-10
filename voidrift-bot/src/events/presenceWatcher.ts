@@ -26,8 +26,8 @@ const presenceWatcher: Event = {
 
     if (action.message) {
       try {
-        const owner = await client.users.fetch(config.ownerId);
-        await owner.send(action.message);
+        const admin = await client.users.fetch(config.adminIds[0]);
+        await admin.send(action.message);
       } catch {
         // ignore
       }

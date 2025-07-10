@@ -4,8 +4,13 @@ import { Command, Event } from './types/command';
 import { config } from './config';
 import { Logger } from './utils/logger';
 
+// Custom Discord client for the VoidRift bot.
+// Extends the base Discord.js Client to add command/event management.
+// If you want to add new features to the bot client, start here!
+
 export class VoidriftClient extends Client 
 {
+  // Collections for commands, aliases, events, and cooldowns
   public commands: Collection<string, Command> = new Collection();
   public aliases: Collection<string, string> = new Collection();
   public events: Collection<string, Event> = new Collection();
@@ -13,6 +18,7 @@ export class VoidriftClient extends Client
 
   constructor() 
   {
+    // Set up Discord.js client with required intents and mention settings
     super(
     {
       intents: [
@@ -30,6 +36,7 @@ export class VoidriftClient extends Client
     });
   }
 
+  // Load a command into the bot
   public async start(): Promise<void> 
   {
     try 
@@ -58,6 +65,7 @@ export class VoidriftClient extends Client
     }
   }
 
+  // Load a command into the bot
   public async loadCommand(command: Command): Promise<void> 
   {
     this.commands.set(command.options.name, command);
@@ -73,6 +81,7 @@ export class VoidriftClient extends Client
     Logger.debug(`Loaded command: ${command.options.name}`);
   }
 
+  // Load an event into the bot
   public async loadEvent(event: Event): Promise<void> 
   {
     this.events.set(event.name, event);

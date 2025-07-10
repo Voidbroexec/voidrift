@@ -1,6 +1,5 @@
-
 import { EmbedBuilder, User,ColorResolvable  } from 'discord.js';
-import { Command } from '../../types/command';
+import { Command, CommandExecuteOptions } from '../../types/command';
 import { config } from '../../config';
 
 const avatar: Command = 
@@ -8,14 +7,14 @@ const avatar: Command =
   options: 
   {
     name: 'avatar',
-    description: 'Display a user\'s avatar',
+    description: 'Get a user\'s avatar in different sizes.',
     category: 'utility',
     aliases: ['av', 'pfp'],
     usage: 'avatar [@user]',
     examples: ['avatar', 'avatar @john']
   },
   
-  execute: async ({ client, message, args }) => 
+  execute: async ({ client, message, args }: CommandExecuteOptions) => 
   {
     if (!message) return;
 
@@ -38,8 +37,9 @@ const avatar: Command =
       targetUser = message.author;
     }
 
+    const color = /^#?[0-9A-Fa-f]{6}$/.test(config.embedColor) ? config.embedColor : '#7289da';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(color as ColorResolvable)
       .setTitle(`${targetUser.tag}'s Avatar`)
       .setImage(targetUser.displayAvatarURL({ size: 1024 }))
       .setDescription(`[Download Link](${targetUser.displayAvatarURL({ size: 1024 })})`)

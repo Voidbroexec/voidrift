@@ -15,10 +15,11 @@ const exportconfig: Command = {
   execute: async ({ message, args }) => {
     if (!message) return;
     const path = args && args[0] ? args[0] : 'automation-config.json';
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     try {
       await exportAutomationConfig(path);
       const embed = new EmbedBuilder()
-        .setColor(config.embedColor as ColorResolvable)
+        .setColor(defaultColor as any)
         .setTitle('Config Exported')
         .setDescription(`Saved to **${path}**`);
       await message.reply({ embeds: [embed] });

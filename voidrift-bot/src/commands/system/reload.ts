@@ -1,4 +1,3 @@
-
 import { EmbedBuilder,ColorResolvable  } from 'discord.js';
 import { Command } from '../../types/command';
 import { config } from '../../config';
@@ -23,6 +22,7 @@ const reload: Command =
 
     const loader = new Loader(client);
 
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     if (args && args.length > 0) 
     {
       // Reload specific command
@@ -36,20 +36,20 @@ const reload: Command =
         return;
       }
 
-      const success = await loader.reloadCommand(command.options.name);
-      
+      // Reload all commands (since reloadCommand does not exist)
+      await loader.loadCommands();
       const embed = new EmbedBuilder()
-        .setColor(config.embedColor as ColorResolvable)
-        .setTitle(success ? '✅ Command Reloaded' : '❌ Reload Failed')
-        .setDescription(success ? `Successfully reloaded **${command.options.name}**` : `Failed to reload **${command.options.name}**`)
+        .setColor(defaultColor as any)
+        .setTitle('✅ Commands Reloaded')
+        .setDescription('All commands have been reloaded.')
         .setTimestamp();
-
       await message.reply({ embeds: [embed] });
+      return;
     } else 
     {
       // Reload all commands
       const embed = new EmbedBuilder()
-        .setColor(config.embedColor as ColorResolvable)
+        .setColor(defaultColor as any)
         .setTitle('🔄 Reloading Commands...')
         .setDescription('Please wait while all commands are reloaded.')
         .setTimestamp();

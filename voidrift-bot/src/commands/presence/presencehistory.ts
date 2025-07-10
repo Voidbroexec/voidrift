@@ -18,8 +18,9 @@ const presencehistory: Command = {
     const history = getPresenceHistory().slice(-10).reverse();
     const lines = history.map(h => `${new Date(h.timestamp).toLocaleString()} - ${h.status}`);
 
+    const color = /^#?[0-9A-Fa-f]{6}$/.test(config.embedColor) ? config.embedColor : '#7289da';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(color as ColorResolvable)
       .setTitle('Presence History')
       .setDescription(lines.join('\n') || 'No history recorded.');
 

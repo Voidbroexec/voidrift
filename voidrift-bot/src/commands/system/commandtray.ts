@@ -14,14 +14,15 @@ const commandtray: Command = {
   execute: async ({ client, message }) => {
     if (!message) return;
 
-    const commands = Array.from(client.commands.values()).filter(cmd =>
+    const commands = (Array.from(client.commands.values()) as Command[]).filter(cmd =>
       cmd.options.ownerOnly || (cmd.options.permissions && cmd.options.permissions.includes(PermissionFlagsBits.Administrator))
     );
 
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     const embed = new EmbedBuilder()
-      .setColor(config.embedColor as ColorResolvable)
+      .setColor(defaultColor as any)
       .setTitle('Command Tray')
-      .setDescription(commands.map(c => `**${c.options.name}** - ${c.options.description}`).join('\n') || 'No commands');
+      .setDescription(commands.map((c: Command) => `**${c.options.name}** - ${c.options.description}`).join('\n') || 'No commands');
 
     await message.reply({ embeds: [embed] });
   }

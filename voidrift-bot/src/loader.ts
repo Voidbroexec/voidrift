@@ -1,3 +1,6 @@
+// Loader for commands and events in the VoidRift bot.
+// Dynamically loads all commands and events from the filesystem.
+// If you want to add or change how commands/events are loaded, start here!
 
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
@@ -7,6 +10,7 @@ import { Logger } from './utils/logger';
 
 export class Loader 
 {
+  // Reference to the bot client
   private readonly client: VoidriftClient;
 
   constructor(client: VoidriftClient) 
@@ -14,6 +18,30 @@ export class Loader
     this.client = client;
   }
 
+  // Check if an object is a valid event
+  private isValidEvent(event: any): event is Event {
+    return (
+      event &&
+      typeof event === 'object' &&
+      typeof event.name === 'string' &&
+      typeof event.execute === 'function'
+    );
+  }
+
+  // Check if an object is a valid command
+  private isValidCommand(command: any): command is Command {
+    return (
+      command &&
+      typeof command === 'object' &&
+      command.options &&
+      typeof command.options.name === 'string' &&
+      typeof command.options.description === 'string' &&
+      typeof command.options.category === 'string' &&
+      typeof command.execute === 'function'
+    );
+  }
+
+  // Load all commands from the commands directory
   public async loadCommands(): Promise<void> 
   {
     const commandsPath = join(__dirname, 'commands');
@@ -28,7 +56,7 @@ export class Loader
       for (const category of categories) {
         const categoryPath = join(commandsPath, category);
         const commandFiles = readdirSync(categoryPath).filter(file =>
-          file.endsWith('.js')
+          file.endsWith('.js') && !file.endsWith('.d.ts')
         );
 
         for (const file of commandFiles) 
@@ -51,7 +79,7 @@ export class Loader
             }
           } catch (error) 
           {
-            Logger.error(`Failed to load command ${category}/${file}: ${error}`);
+            Logger.error(`Failed to load command ${category}/${file}: ${error instanceof Error ? error.stack : error}`);
           }
         }
       }
@@ -59,10 +87,11 @@ export class Loader
       Logger.success(`Loaded ${commandCount} commands from ${categories.length} categories`);
     } catch (error) 
     {
-      Logger.error(`Failed to load commands: ${error}`);
+      Logger.error(`Failed to load commands: ${error instanceof Error ? error.stack : error}`);
     }
   }
 
+  // Load all events from the events directory
   public async loadEvents(): Promise<void> 
   {
     const eventsPath = join(__dirname, 'events');
@@ -71,7 +100,7 @@ export class Loader
     try 
     {
       const eventFiles = readdirSync(eventsPath).filter(file =>
-        file.endsWith('.js')
+        file.endsWith('.js') && !file.endsWith('.d.ts')
       );
 
       for (const file of eventFiles) 
@@ -94,91 +123,26 @@ export class Loader
           }
         } catch (error) 
         {
-          Logger.error(`Failed to load event ${file}: ${error}`);
+          Logger.error(`Failed to load event ${file}: ${error instanceof Error ? error.stack : error}`);
         }
+      }
+      // Register reaction role event handlers
+      try {
+        const reactionRoleAdd = (await import('./events/reactionRoleAdd')).default;
+        if (this.isValidEvent(reactionRoleAdd)) {
+          await this.client.loadEvent(reactionRoleAdd);
+        }
+        const reactionRoleRemove = (await import('./events/reactionRoleRemove')).default;
+        if (this.isValidEvent(reactionRoleRemove)) {
+          await this.client.loadEvent(reactionRoleRemove);
+        }
+      } catch (e) {
+        Logger.warn('Could not load reaction role event handlers: ' + e);
       }
 
       Logger.success(`Loaded ${eventCount} events`);
-    } catch (error) 
-    {
-      Logger.error(`Failed to load events: ${error}`);
+    } catch (error) {
+      Logger.error(`Failed to load events: ${error instanceof Error ? error.stack : error}`);
     }
-  }
-
-  public async reloadCommand(commandName: string): Promise<boolean> 
-  {
-    try 
-    {
-      const command = this.client.commands.get(commandName);
-      if (!command) return false;
-
-      // Find the command file
-      const commandsPath = join(__dirname, 'commands');
-      const categories = readdirSync(commandsPath).filter(dir => 
-        statSync(join(commandsPath, dir)).isDirectory()
-      );
-
-      for (const category of categories) 
-      {
-        const categoryPath = join(commandsPath, category);
-        const commandFiles = readdirSync(categoryPath).filter(file =>
-          file.endsWith('.js')
-        );
-        
-        for (const file of commandFiles) 
-        {
-          const commandPath = join(categoryPath, file);
-          delete require.cache[require.resolve(commandPath)];
-          
-          const commandModule = await import(commandPath);
-          const reloadedCommand: Command = commandModule.default ?? commandModule;
-          
-          if (reloadedCommand.options.name === commandName) 
-          {
-            // Remove old aliases
-            if (command.options.aliases) 
-            {
-              command.options.aliases.forEach(alias => 
-              {
-                this.client.aliases.delete(alias);
-              });
-            }
-            
-            // Load new command
-            await this.client.loadCommand(reloadedCommand);
-            return true;
-          }
-        }
-      }
-      
-      return false;
-    } catch (error) 
-    {
-      Logger.error(`Failed to reload command ${commandName}: ${error}`);
-      return false;
-    }
-  }
-
-  private isValidCommand(command: any): command is Command 
-  {
-    return (
-      command &&
-      typeof command === 'object' &&
-      command.options &&
-      typeof command.options.name === 'string' &&
-      typeof command.options.description === 'string' &&
-      typeof command.options.category === 'string' &&
-      typeof command.execute === 'function'
-    );
-  }
-
-  private isValidEvent(event: any): event is Event 
-  {
-    return (
-      event &&
-      typeof event === 'object' &&
-      typeof event.name === 'string' &&
-      typeof event.execute === 'function'
-    );
   }
 }

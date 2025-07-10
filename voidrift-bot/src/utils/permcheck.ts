@@ -1,11 +1,14 @@
-
 import { Message, PermissionResolvable, ChatInputCommandInteraction, GuildMember } from 'discord.js';
 import { config } from '../config';
 import { Command } from '../types/command';
 
 export class PermissionChecker {
-  static isOwner(userId: string): boolean {
-    return userId === config.ownerId;
+  static isAdmin(userId: string, member?: GuildMember): boolean {
+    if (config.adminIds.includes(userId)) return true;
+    if (config.adminRole && member) {
+      return member.roles.cache.has(config.adminRole);
+    }
+    return false;
   }
 
   static async checkPermissions(
@@ -20,14 +23,14 @@ export class PermissionChecker {
       return { hasPermission: false };
     }
 
-    // Owner bypass
-    if (this.isOwner(user.id)) {
+    // Admin bypass: admins can use ALL commands
+    if (this.isAdmin(user.id, member)) {
       return { hasPermission: true };
     }
 
     // Check if command is owner only
     if (command.options.ownerOnly) {
-      return { hasPermission: false, missingPermissions: ['Bot Owner'] };
+      return { hasPermission: false, missingPermissions: ['Bot Admin'] };
     }
 
     // Check if command requires guild

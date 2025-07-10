@@ -15,10 +15,11 @@ const importconfig: Command = {
   execute: async ({ message, args }) => {
     if (!message || !args || args.length === 0) return;
     const path = args[0];
+    const defaultColor = (config.embedColor as string) || '#2d0036';
     try {
       await importAutomationConfig(path);
       const embed = new EmbedBuilder()
-        .setColor(config.embedColor as ColorResolvable)
+        .setColor(defaultColor as any)
         .setTitle('Config Imported')
         .setDescription(`Loaded from **${path}**`);
       await message.reply({ embeds: [embed] });

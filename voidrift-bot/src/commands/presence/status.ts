@@ -1,4 +1,3 @@
-
 import { EmbedBuilder, ActivityType,ColorResolvable  } from 'discord.js';
 import { Command } from '../../types/command';
 import { config } from '../../config';
@@ -52,8 +51,9 @@ const status: Command =
     {
       client.user?.setActivity(text, { type: activityType });
       
+      const defaultColor = (config.embedColor as string) || '#2d0036';
       const embed = new EmbedBuilder()
-        .setColor(config.embedColor as ColorResolvable)
+        .setColor(defaultColor as any)
         .setTitle('✅ Status Updated')
         .setDescription(`Now ${typeArg} **${text}**`)
         .setTimestamp();

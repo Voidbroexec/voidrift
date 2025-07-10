@@ -1,4 +1,8 @@
 import fs from 'fs-extra';
+import fetch from 'node-fetch';
+
+// send it to AI to explain bro sorry i just coded without thinking
+
 export interface PresenceAction {
   message?: string;
   activity?: string;
@@ -9,10 +13,18 @@ export interface UserTrigger {
   reactEmoji?: string;
 }
 
+export interface AutoCommand {
+  command: string;
+  channelId: string;
+  intervalMs: number;
+  nextRun: number;
+}
+
 export interface AutomationConfig {
   dndMessage: string;
   dryTriggers: string[];
   dryEmoji: string;
+  globalReactEmoji?: string;
   stealth: boolean;
   macros: Record<string, string>;
   userTriggers: Record<string, UserTrigger>;
@@ -22,6 +34,7 @@ export interface AutomationConfig {
     dnd?: PresenceAction;
     invisible?: PresenceAction;
   };
+  autoCommands?: AutoCommand[];
 }
 
 export const automationConfig: AutomationConfig = {
@@ -43,8 +56,19 @@ export function setStealth(on: boolean): void {
 }
 
 export function setDryReact(emoji: string, triggers: string[]): void {
-  automationConfig.dryEmoji = emoji;
-  automationConfig.dryTriggers = triggers;
+  if (emoji.toLowerCase() === 'off') {
+    automationConfig.globalReactEmoji = undefined;
+    automationConfig.dryEmoji = '';
+    automationConfig.dryTriggers = [];
+  } else if (triggers.length === 0) {
+    automationConfig.globalReactEmoji = emoji;
+    automationConfig.dryEmoji = '';
+    automationConfig.dryTriggers = [];
+  } else {
+    automationConfig.globalReactEmoji = undefined;
+    automationConfig.dryEmoji = emoji;
+    automationConfig.dryTriggers = triggers;
+  }
 }
 
 export function setPresenceAction(status: keyof AutomationConfig['presenceActions'], action: PresenceAction): void {
@@ -84,4 +108,51 @@ export function removeMacro(name: string): void {
 
 export function listMacros(): Record<string, string> {
   return { ...automationConfig.macros };
+}
+
+if (!automationConfig.autoCommands) automationConfig.autoCommands = [];
+
+export function addAutoCommand(command: string, channelId: string, intervalMs: number): void {
+  if (!automationConfig.autoCommands) automationConfig.autoCommands = [];
+  automationConfig.autoCommands.push({
+    command,
+    channelId,
+    intervalMs,
+    nextRun: Date.now() + intervalMs
+  });
+}
+
+export function removeAutoCommand(command: string, channelId: string): void {
+  if (!automationConfig.autoCommands) return;
+  automationConfig.autoCommands = automationConfig.autoCommands.filter(c => c.command !== command || c.channelId !== channelId);
+}
+
+export function listAutoCommands(): AutoCommand[] {
+  return automationConfig.autoCommands ? [...automationConfig.autoCommands] : [];
+}
+
+// Fetch upcoming CTFs from CTFTime API
+export async function fetchUpcomingCTFs(limit = 5) {
+  // CTFTime API: https://ctftime.org/api/v1/events/?limit=5&start=now
+  const now = Math.floor(Date.now() / 1000);
+  const url = `https://ctftime.org/api/v1/events/?limit=${limit}&start=${now}`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Failed to fetch CTFs');
+    const data = (await res.json()) as any[];
+    // Format CTFs for Discord
+    return data.map((ctf: any) => ({
+      title: ctf.title,
+      url: ctf.url,
+      start: new Date(ctf.start), // CTFTime returns ISO 8601 string
+      finish: new Date(ctf.finish), // CTFTime returns ISO 8601 string
+      format: ctf.format,
+      onsite: ctf.onsite,
+      location: ctf.location,
+      duration: ctf.duration,
+      description: ctf.description
+    }));
+  } catch (err) {
+    return [];
+  }
 }
