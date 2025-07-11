@@ -36,15 +36,19 @@ for (const file of commandFiles) {
   const commandModule = require(file);
   const command = commandModule.default || commandModule;
   if (command && command.options && command.options.name && command.options.description) {
-    // If the command has a slashData (SlashCommandBuilder), use it
     if (command.options.slashData instanceof SlashCommandBuilder) {
       commands.push(command.options.slashData.toJSON());
     } else {
-      // Otherwise, register as a basic slash command
       commands.push(
         new SlashCommandBuilder()
           .setName(command.options.name)
           .setDescription(command.options.description)
+          .addStringOption(opt =>
+            opt
+              .setName('args')
+              .setDescription('Command arguments')
+              .setRequired(false)
+          )
           .toJSON()
       );
     }

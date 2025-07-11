@@ -1,5 +1,6 @@
 import { Event } from '../types/command';
 import { ButtonInteraction, ChannelType, TextChannel, AttachmentBuilder, GuildMember, CategoryChannel, OverwriteResolvable, ActionRowBuilder, ButtonBuilder, ButtonStyle, MessageFlags } from 'discord.js';
+import { interactionToMessage } from '../utils/interactionMessage';
 import { config } from '../config';
 import { PermissionChecker } from '../utils/permcheck';
 import { Logger } from '../utils/logger';
@@ -109,9 +110,15 @@ const interactionCreate: Event = {
         await interaction.reply({ content: 'Insufficient permissions.', ephemeral: true });
         return;
       }
+      const input = interaction.options.getString('args') ?? '';
+      const args = input.trim().length > 0 ? input.trim().split(/\s+/) : [];
+      const fakeMessage = interactionToMessage(
+        interaction,
+        `/${interaction.commandName}${input ? ` ${input}` : ''}`
+      );
       Logger.command(interaction.user.tag, command.options.name, interaction.guild?.name);
       try {
-        await command.execute({ client, interaction });
+        await command.execute({ client, message: fakeMessage, args, interaction });
       } catch (err) {
         Logger.error(`Error executing slash command ${command.options.name}: ${err}`);
         await interaction.reply({ content: 'An error occurred while executing this command.', ephemeral: true });
