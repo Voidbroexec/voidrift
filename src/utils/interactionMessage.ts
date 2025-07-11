@@ -6,7 +6,7 @@ export function interactionToMessage(interaction: ChatInputCommandInteraction, c
     content,
     author: interaction.user,
     client: interaction.client,
-    channel: interaction.channel as any,
+    channel: interaction.channel as TextBasedChannel | undefined,
     guild: interaction.guild || null,
     member: interaction.member as GuildMember | null,
     createdTimestamp: interaction.createdTimestamp,
