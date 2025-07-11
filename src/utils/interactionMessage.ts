@@ -1,4 +1,4 @@
-import { ChatInputCommandInteraction, Collection, GuildMember, Message, TextBasedChannel, User } from 'discord.js';
+import { ChatInputCommandInteraction, Collection, GuildMember, Message, TextBasedChannel, User, MessagePayload, MessageReplyOptions } from 'discord.js';
 
 export function interactionToMessage(interaction: ChatInputCommandInteraction, content: string): Message {
   const fake: Partial<Message> = {
@@ -6,7 +6,7 @@ export function interactionToMessage(interaction: ChatInputCommandInteraction, c
     content,
     author: interaction.user,
     client: interaction.client,
-    channel: interaction.channel as TextBasedChannel | null,
+    channel: interaction.channel as any,
     guild: interaction.guild || null,
     member: interaction.member as GuildMember | null,
     createdTimestamp: interaction.createdTimestamp,
@@ -19,7 +19,7 @@ export function interactionToMessage(interaction: ChatInputCommandInteraction, c
       everyone: false,
       repliedUser: null,
     } as any,
-    reply: async (options: any) => {
+    reply: async (options: string | MessagePayload | MessageReplyOptions) => {
       if (interaction.replied || interaction.deferred) {
         return interaction.followUp(options);
       }
