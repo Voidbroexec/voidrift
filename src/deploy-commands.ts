@@ -35,7 +35,12 @@ const commandFiles = getCommandFiles(join(__dirname, 'commands'));
 for (const file of commandFiles) {
   const commandModule = require(file);
   const command = commandModule.default || commandModule;
-  if (command && command.options && command.options.name && command.options.description) {
+  if (
+    command &&
+    command.options &&
+    command.options.name &&
+    command.options.description
+  ) {
     if (command.options.slashData instanceof SlashCommandBuilder) {
       commands.push(command.options.slashData.toJSON());
     } else {
@@ -72,4 +77,4 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
   } catch (error) {
     console.error(error);
   }
-})(); 
+})();
