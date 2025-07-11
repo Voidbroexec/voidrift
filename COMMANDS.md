@@ -3,6 +3,8 @@
 ## 📊 Overview
 **Total Commands: 97** | **Categories: 6** | **Last Updated: Version 2.0**
 
+- All commands now support **slash command** usage with the `/command args` format.
+
 ---
 
 ## 🔍 Enhanced System Commands
