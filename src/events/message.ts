@@ -106,10 +106,47 @@ const message: Event =
       }
     }
 
-    // Remove all message-based command handling. Optionally, inform users to use slash commands.
-    if (message.content.startsWith('/')) {
-      await message.reply('All commands are now slash commands. Please use the Discord slash command menu (type /).');
+    // Handle prefix commands using "/" for backward compatibility
+    const prefix = config.prefix || '/';
+    if (!message.content.startsWith(prefix)) return;
+
+    const args = message.content.slice(prefix.length).trim().split(/\s+/);
+    const commandName = args.shift()?.toLowerCase();
+    if (!commandName) return;
+
+    const command =
+      client.commands.get(commandName) ??
+      client.commands.get(client.aliases.get(commandName) ?? '');
+    if (!command) return;
+
+    const perm = await PermissionChecker.checkPermissions(command, message);
+    if (!perm.hasPermission) {
+      const missing = perm.missingPermissions?.join(', ');
+      await message.reply(
+        missing ? `Missing permissions: ${missing}` : 'Insufficient permissions.'
+      );
       return;
+    }
+
+    if (command.options.cooldown) {
+      const ok = await client.checkCooldown(
+        message.author.id,
+        command.options.name,
+        command.options.cooldown
+      );
+      if (!ok) {
+        await message.reply('Please wait before using this command again.');
+        return;
+      }
+    }
+
+    Logger.command(message.author.tag, command.options.name, message.guild?.name);
+
+    try {
+      await command.execute({ client, message, args });
+    } catch (err) {
+      Logger.error(`Error executing command ${command.options.name}: ${err}`);
+      await message.reply('An error occurred while executing this command.');
     }
   }
 };
