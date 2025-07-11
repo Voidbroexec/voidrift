@@ -70,6 +70,8 @@ export interface Command {
     ownerOnly?: boolean;
     guildOnly?: boolean;
     cooldown?: number;
+    slashCommand?: boolean;
+    slashData?: SlashCommandBuilder;
     // Add more options as needed
   };
   execute: (options: CommandExecuteOptions) => Promise<void>;
