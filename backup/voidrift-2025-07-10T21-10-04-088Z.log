@@ -1,0 +1,1072 @@
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 7:30:29 AM] [INFO] Loading commands and events...
+[7/8/2025, 7:30:29 AM] [SUCCESS] Loaded 51 commands from 6 categories
+[7/8/2025, 7:30:29 AM] [SUCCESS] Loaded 5 events
+[7/8/2025, 7:30:29 AM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 7:30:30 AM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 7:30:30 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 7:30:30 AM] [INFO] Serving 1 guilds with 49 commands
+[7/8/2025, 7:31:32 AM] [COMMAND] voidlegendy used log in The Developer Community
+[7/8/2025, 7:33:25 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 7:34:33 AM] [INFO] Loading commands and events...
+[7/8/2025, 7:34:33 AM] [SUCCESS] Loaded 51 commands from 6 categories
+[7/8/2025, 7:34:34 AM] [SUCCESS] Loaded 5 events
+[7/8/2025, 7:34:34 AM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 7:34:34 AM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 7:34:34 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 7:34:34 AM] [INFO] Serving 1 guilds with 49 commands
+[7/8/2025, 7:35:00 AM] [COMMAND] voidlegendy used log in The Developer Community
+[7/8/2025, 7:35:01 AM] [ERROR] Error executing command log: DiscordAPIError[50035]: Invalid Form Body
+content[BASE_TYPE_MAX_LENGTH]: Must be 2000 or fewer in length.
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\system\log.js:48:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:88:13)
+[7/8/2025, 7:39:58 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 7:40:33 AM] [INFO] Loading commands and events...
+[7/8/2025, 7:40:33 AM] [SUCCESS] Loaded 51 commands from 6 categories
+[7/8/2025, 7:40:33 AM] [SUCCESS] Loaded 5 events
+[7/8/2025, 7:40:33 AM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 7:40:33 AM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 7:40:33 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 7:40:33 AM] [INFO] Serving 1 guilds with 49 commands
+[7/8/2025, 7:42:08 AM] [COMMAND] voidlegendy used log in The Developer Community
+[7/8/2025, 7:43:43 AM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 7:43:53 AM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 8:40:33 AM] [INFO] Bot Stats - Guilds: 1, Users: 3
+[7/8/2025, 9:40:34 AM] [INFO] Bot Stats - Guilds: 1, Users: 3
+[7/8/2025, 10:40:34 AM] [INFO] Bot Stats - Guilds: 1, Users: 3
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 7:47:28 PM] [INFO] Loading commands and events...
+[7/8/2025, 7:47:29 PM] [SUCCESS] Loaded 51 commands from 6 categories
+[7/8/2025, 7:47:29 PM] [SUCCESS] Loaded 5 events
+[7/8/2025, 7:47:29 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 7:47:29 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 7:47:30 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 7:47:30 PM] [INFO] Serving 1 guilds with 49 commands
+[7/8/2025, 7:47:34 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 7:47:41 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 7:48:02 PM] [COMMAND] voidlegendy used help in The Developer Community
+[7/8/2025, 7:48:52 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 7:49:29 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 7:49:41 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 7:49:42 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:27:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:88:13)
+[7/8/2025, 7:49:42 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:103:17)
+[7/8/2025, 7:50:18 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 7:54:12 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 7:54:19 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 8:26:33 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 8:26:38 PM] [INFO] Loading commands and events...
+[7/8/2025, 8:26:39 PM] [SUCCESS] Loaded 51 commands from 6 categories
+[7/8/2025, 8:26:39 PM] [SUCCESS] Loaded 5 events
+[7/8/2025, 8:26:39 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 8:26:40 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 8:26:40 PM] [INFO] Serving 0 guilds with 49 commands
+[7/8/2025, 8:26:40 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 8:27:38 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 9:23:10 PM] [INFO] Loading commands and events...
+[7/8/2025, 9:23:10 PM] [SUCCESS] Loaded 51 commands from 6 categories
+[7/8/2025, 9:23:10 PM] [SUCCESS] Loaded 5 events
+[7/8/2025, 9:23:10 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 9:23:11 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 9:23:11 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 9:23:11 PM] [INFO] Serving 1 guilds with 49 commands
+[7/8/2025, 9:24:06 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 9:24:41 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 9:24:42 PM] [ERROR] Error executing command purge: DiscordAPIError[50013]: Missing Permissions
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.bulkDelete (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:333:7)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:26:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:88:13)
+[7/8/2025, 9:24:58 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 9:24:58 PM] [ERROR] Error executing command purge: DiscordAPIError[50013]: Missing Permissions
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.bulkDelete (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:333:7)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:26:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:88:13)
+[7/8/2025, 9:25:31 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 9:32:11 PM] [COMMAND] voidlegendy used meme in The Developer Community
+[7/8/2025, 9:32:35 PM] [COMMAND] voidlegendy used gif in The Developer Community
+[7/8/2025, 9:36:16 PM] [COMMAND] voidlegendy used ai in The Developer Community
+[7/8/2025, 9:36:54 PM] [COMMAND] voidlegendy used ai in The Developer Community
+[7/8/2025, 9:37:43 PM] [COMMAND] voidlegendy used ai in The Developer Community
+[7/8/2025, 10:23:11 PM] [INFO] Bot Stats - Guilds: 1, Users: 10
+[7/8/2025, 11:02:09 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 11:04:36 PM] [INFO] Loading commands and events...
+[7/8/2025, 11:04:37 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:04:37 PM] [WARN] Invalid event structure in reactionRoleHandler.js
+[7/8/2025, 11:04:37 PM] [SUCCESS] Loaded 9 events
+[7/8/2025, 11:04:37 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 11:04:38 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 11:04:38 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 11:04:38 PM] [INFO] Serving 1 guilds with 76 commands
+[7/8/2025, 11:06:11 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 11:07:07 PM] [INFO] Loading commands and events...
+[7/8/2025, 11:07:07 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:07:07 PM] [WARN] Invalid event structure in reactionRoleHandler.js
+[7/8/2025, 11:07:07 PM] [SUCCESS] Loaded 11 events
+[7/8/2025, 11:07:07 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 11:07:08 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 11:07:08 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 11:07:08 PM] [INFO] Serving 1 guilds with 76 commands
+[7/8/2025, 11:07:45 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 11:07:57 PM] [INFO] Loading commands and events...
+[7/8/2025, 11:07:57 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:07:57 PM] [SUCCESS] Loaded 11 events
+[7/8/2025, 11:07:57 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 11:07:58 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 11:07:58 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 11:07:58 PM] [INFO] Serving 1 guilds with 76 commands
+[7/8/2025, 11:08:39 PM] [COMMAND] voidlegendy used voidrift in The Developer Community
+[7/8/2025, 11:08:55 PM] [COMMAND] voidlegendy used help in The Developer Community
+[7/8/2025, 11:09:42 PM] [COMMAND] voidlegendy used balance in The Developer Community
+[7/8/2025, 11:10:31 PM] [COMMAND] voidlegendy used pay in The Developer Community
+[7/8/2025, 11:13:23 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 11:13:39 PM] [INFO] Loading commands and events...
+[7/8/2025, 11:13:40 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:13:40 PM] [SUCCESS] Loaded 11 events
+[7/8/2025, 11:13:40 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 11:13:40 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 11:13:40 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 11:13:40 PM] [INFO] Serving 1 guilds with 76 commands
+[7/8/2025, 11:14:26 PM] [COMMAND] voidlegendy used balance in The Developer Community
+[7/8/2025, 11:14:48 PM] [COMMAND] voidlegendy used pay in The Developer Community
+[7/8/2025, 11:15:13 PM] [COMMAND] voidlegendy used pay in The Developer Community
+[7/8/2025, 11:15:36 PM] [COMMAND] champion29003 used balance in The Developer Community
+[7/8/2025, 11:16:02 PM] [COMMAND] voidlegendy used accepttrade in The Developer Community
+[7/8/2025, 11:16:16 PM] [COMMAND] voidlegendy used balance in The Developer Community
+[7/8/2025, 11:16:33 PM] [COMMAND] voidlegendy used pay in The Developer Community
+[7/8/2025, 11:17:16 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 11:17:39 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 11:17:40 PM] [ERROR] Error executing command debug: DiscordAPIError[50035]: Invalid Form Body
+content[BASE_TYPE_MAX_LENGTH]: Must be 2000 or fewer in length.
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\system\debug.js:68:21)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:20:05 PM] [COMMAND] voidlegendy used reload in The Developer Community
+[7/8/2025, 11:20:06 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:20:14 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 11:20:15 PM] [ERROR] Error executing command debug: DiscordAPIError[50035]: Invalid Form Body
+content[BASE_TYPE_MAX_LENGTH]: Must be 4000 or fewer in length.
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\system\debug.js:68:21)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:21:01 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 11:21:10 PM] [INFO] Loading commands and events...
+[7/8/2025, 11:21:11 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:21:11 PM] [SUCCESS] Loaded 11 events
+[7/8/2025, 11:21:11 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 11:21:11 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 11:21:11 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 11:21:11 PM] [INFO] Serving 1 guilds with 76 commands
+[7/8/2025, 11:21:21 PM] [COMMAND] voidlegendy used debug in The Developer Community
+[7/8/2025, 11:23:46 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 11:24:31 PM] [COMMAND] voidlegendy used ai in The Developer Community
+[7/8/2025, 11:26:15 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:26:16 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:26:16 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:27:44 PM] [COMMAND] voidlegendy used help in The Developer Community
+[7/8/2025, 11:28:28 PM] [COMMAND] voidlegendy used voidrift in The Developer Community
+[7/8/2025, 11:28:50 PM] [COMMAND] voidlegendy used voidrift in The Developer Community
+[7/8/2025, 11:30:27 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:30:28 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:30:28 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:30:52 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:30:52 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:30:53 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:31:47 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 11:32:33 PM] [COMMAND] voidlegendy used voidrift in The Developer Community
+[7/8/2025, 11:32:33 PM] [ERROR] Error executing command voidrift: Error: Invalid number value
+    at Object.run (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:1580:72)
+    at C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:972:67
+    at Array.reduce (<anonymous>)
+    at _NumberValidator.parse (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@sapphire\shapeshift\dist\cjs\index.cjs:972:29)
+    at validateFieldLength (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\builders\dist\index.js:157:24)
+    at EmbedBuilder.addFields (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\builders\dist\index.js:234:5)
+    at Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\system\voidrift.js:53:23)
+    at Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[7/8/2025, 11:34:06 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 11:34:14 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:34:15 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:34:15 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:35:59 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/8/2025, 11:36:21 PM] [INFO] Loading commands and events...
+[7/8/2025, 11:36:21 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/8/2025, 11:36:21 PM] [SUCCESS] Loaded 11 events
+[7/8/2025, 11:36:21 PM] [INFO] Starting VoidRift Bot...
+[7/8/2025, 11:36:22 PM] [SUCCESS] Bot logged in successfully!
+[7/8/2025, 11:36:22 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/8/2025, 11:36:22 PM] [INFO] Serving 1 guilds with 76 commands
+[7/8/2025, 11:36:45 PM] [COMMAND] voidlegendy used meme in The Developer Community
+[7/8/2025, 11:37:47 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/8/2025, 11:41:32 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:41:33 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:41:33 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:41:41 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:41:42 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:41:42 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:41:49 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/8/2025, 11:41:50 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/8/2025, 11:41:50 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/8/2025, 11:55:16 PM] [COMMAND] voidlegendy used pay in The Developer Community
+[7/9/2025, 12:30:32 AM] [COMMAND] voidlegendy used afk in The Developer Community
+[7/9/2025, 12:30:46 AM] [COMMAND] voidlegendy used help in The Developer Community
+[7/9/2025, 12:31:33 AM] [COMMAND] voidlegendy used rps in The Developer Community
+[7/9/2025, 12:31:40 AM] [COMMAND] voidlegendy used rps in The Developer Community
+[7/9/2025, 12:32:11 AM] [COMMAND] voidlegendy used coinflip in The Developer Community
+[7/9/2025, 12:32:38 AM] [COMMAND] voidlegendy used gamble in The Developer Community
+[7/9/2025, 12:34:51 AM] [COMMAND] voidlegendy used gamble in The Developer Community
+[7/9/2025, 12:35:11 AM] [COMMAND] voidlegendy used coinflip in The Developer Community
+[7/9/2025, 12:35:32 AM] [COMMAND] voidlegendy used coinflip in The Developer Community
+[7/9/2025, 12:36:07 AM] [COMMAND] voidlegendy used gamble in The Developer Community
+[7/9/2025, 12:36:22 AM] [INFO] Bot Stats - Guilds: 1, Users: 8
+[7/9/2025, 12:38:07 AM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/9/2025, 12:38:08 AM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:101:13)
+[7/9/2025, 12:38:08 AM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:116:17)
+[7/9/2025, 12:38:38 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 12:57:26 AM] [INFO] Loading commands and events...
+[7/9/2025, 12:57:26 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 12:57:26 AM] [SUCCESS] Loaded 11 events
+[7/9/2025, 12:57:26 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 12:57:28 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 12:57:28 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 12:57:28 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 12:57:28 AM] [ERROR] Uncaught Exception: Missing Permissions
+[7/9/2025, 12:57:28 AM] [ERROR] DiscordAPIError[50013]: Missing Permissions
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async ensureTicketPanel (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\ready.js:53:5)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\ready.js:64:9)
+[7/9/2025, 12:58:48 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 1:01:15 AM] [INFO] Loading commands and events...
+[7/9/2025, 1:01:16 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 1:01:16 AM] [SUCCESS] Loaded 11 events
+[7/9/2025, 1:01:16 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 1:01:16 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 1:01:16 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 1:01:16 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 1:01:17 AM] [ERROR] Uncaught Exception: Missing Permissions
+[7/9/2025, 1:01:17 AM] [ERROR] DiscordAPIError[50013]: Missing Permissions
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async ensureTicketPanel (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\ready.js:53:5)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\ready.js:64:9)
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 8:26:47 AM] [INFO] Loading commands and events...
+[7/9/2025, 8:26:47 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 8:26:47 AM] [SUCCESS] Loaded 11 events
+[7/9/2025, 8:26:47 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 8:26:48 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 8:26:48 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 8:26:48 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 8:26:49 AM] [ERROR] Uncaught Exception: Missing Permissions
+[7/9/2025, 8:26:49 AM] [ERROR] DiscordAPIError[50013]: Missing Permissions
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async ensureTicketPanel (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\ready.js:53:5)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\ready.js:64:9)
+[7/9/2025, 8:31:09 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 8:31:50 AM] [INFO] Loading commands and events...
+[7/9/2025, 8:31:51 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 8:31:51 AM] [SUCCESS] Loaded 11 events
+[7/9/2025, 8:31:51 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 8:31:51 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 8:31:51 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 8:31:51 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 8:37:35 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 8:37:54 AM] [INFO] Loading commands and events...
+[7/9/2025, 8:37:55 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 8:37:55 AM] [SUCCESS] Loaded 11 events
+[7/9/2025, 8:37:55 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 8:37:55 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 8:37:55 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 8:37:55 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 8:42:39 AM] [COMMAND] voidlegendy used ticket in The Developer Community
+[7/9/2025, 8:43:32 AM] [COMMAND] voidlegendy used ticket in The Developer Community
+[7/9/2025, 9:12:59 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:16:33 AM] [INFO] Loading commands and events...
+[7/9/2025, 9:16:34 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:16:34 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:16:34 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:16:34 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:16:34 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:16:34 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 9:18:18 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:18:46 AM] [INFO] Loading commands and events...
+[7/9/2025, 9:18:47 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:18:47 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:18:47 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:18:47 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:18:47 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:18:47 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 9:21:21 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:21:38 AM] [INFO] Loading commands and events...
+[7/9/2025, 9:21:38 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:21:38 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:21:38 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:21:39 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:21:39 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:21:39 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 9:24:58 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:25:42 AM] [INFO] Loading commands and events...
+[7/9/2025, 9:25:42 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:25:42 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:25:42 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:25:43 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:25:43 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:25:43 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 9:31:46 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:32:50 AM] [INFO] Loading commands and events...
+[7/9/2025, 9:32:50 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:32:50 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:32:50 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:32:51 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:32:51 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:32:51 AM] [INFO] Serving 1 guilds with 76 commands
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:46:17 AM] [INFO] Loading commands and events...
+[7/9/2025, 9:46:18 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:46:18 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:46:18 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:46:19 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:46:19 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:46:19 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 10:43:06 AM] [COMMAND] voidlegendy used help in The Developer Community
+[7/9/2025, 10:46:19 AM] [INFO] Bot Stats - Guilds: 1, Users: 7
+[7/9/2025, 10:48:46 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 10:58:54 AM] [INFO] Loading commands and events...
+[7/9/2025, 10:58:55 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 10:58:55 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 10:58:55 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 10:58:55 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 10:58:56 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 10:58:56 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 11:02:43 AM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 11:02:54 AM] [INFO] Loading commands and events...
+[7/9/2025, 11:02:54 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 11:02:54 AM] [SUCCESS] Loaded 12 events
+[7/9/2025, 11:02:54 AM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 11:02:55 AM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 11:02:55 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 11:02:55 AM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 11:24:44 AM] [COMMAND] voidlegendy used serverinfo in The Developer Community
+[7/9/2025, 6:28:34 PM] [INFO] Bot Stats - Guilds: 1, Users: 5
+[7/9/2025, 6:29:45 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 6:33:16 PM] [INFO] Loading commands and events...
+[7/9/2025, 6:33:17 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 6:33:17 PM] [SUCCESS] Loaded 12 events
+[7/9/2025, 6:33:17 PM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 6:33:17 PM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 6:33:17 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 6:33:17 PM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 7:33:18 PM] [INFO] Bot Stats - Guilds: 1, Users: 3
+[7/9/2025, 7:37:52 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/9/2025, 8:33:18 PM] [INFO] Bot Stats - Guilds: 1, Users: 5
+[7/9/2025, 8:56:36 PM] [COMMAND] voidlegendy used help in The Developer Community
+[7/9/2025, 8:56:55 PM] [COMMAND] voidlegendy used help in The Developer Community
+[7/9/2025, 9:06:11 PM] [COMMAND] champion29003 used setreact in The Developer Community
+[7/9/2025, 9:09:44 PM] [COMMAND] voidlegendy used quest in The Developer Community
+[7/9/2025, 9:12:02 PM] [COMMAND] voidlegendy used quest in The Developer Community
+[7/9/2025, 9:13:33 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/9/2025, 9:14:02 PM] [COMMAND] voidlegendy used warn in The Developer Community
+[7/9/2025, 9:16:20 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:16:33 PM] [INFO] Loading commands and events...
+[7/9/2025, 9:16:34 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:16:34 PM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:16:34 PM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:16:34 PM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:16:34 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:16:34 PM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 9:16:53 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/9/2025, 9:23:07 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/9/2025, 9:23:08 PM] [ERROR] Error executing command purge: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\commands\moderation\purge.js:32:13)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:121:13)
+[7/9/2025, 9:23:08 PM] [ERROR] Failed to send error message: DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\message.js:136:17)
+[7/9/2025, 9:23:17 PM] [COMMAND] voidlegendy used purge in The Developer Community
+[7/9/2025, 9:24:02 PM] [COMMAND] voidlegendy used quest in The Developer Community
+[7/9/2025, 9:26:42 PM] [INFO] Received SIGINT, shutting down gracefully...
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/9/2025, 9:27:09 PM] [INFO] Loading commands and events...
+[7/9/2025, 9:27:09 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/9/2025, 9:27:09 PM] [SUCCESS] Loaded 12 events
+[7/9/2025, 9:27:09 PM] [INFO] Starting VoidRift Bot...
+[7/9/2025, 9:27:10 PM] [SUCCESS] Bot logged in successfully!
+[7/9/2025, 9:27:10 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/9/2025, 9:27:10 PM] [INFO] Serving 1 guilds with 76 commands
+[7/9/2025, 9:27:19 PM] [COMMAND] voidlegendy used setreact in The Developer Community
+[7/9/2025, 9:32:52 PM] [COMMAND] voidlegendy used quest in The Developer Community
+[7/9/2025, 9:42:59 PM] [COMMAND] voidlegendy used help in The Developer Community
+[7/9/2025, 10:27:11 PM] [INFO] Bot Stats - Guilds: 1, Users: 10
+[7/10/2025, 7:14:37 AM] [INFO] Bot Stats - Guilds: 1, Users: 11
+[7/10/2025, 7:20:43 AM] [COMMAND] voidlegendy used quest in The Developer Community
+[7/10/2025, 8:14:32 AM] [INFO] Bot Stats - Guilds: 1, Users: 11
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/10/2025, 8:35:46 AM] [INFO] Loading commands and events...
+[7/10/2025, 8:35:47 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/10/2025, 8:35:47 AM] [SUCCESS] Loaded 12 events
+[7/10/2025, 8:35:47 AM] [INFO] Starting VoidRift Bot...
+[7/10/2025, 8:35:48 AM] [SUCCESS] Bot logged in successfully!
+[7/10/2025, 8:35:48 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/10/2025, 8:35:48 AM] [INFO] Serving 1 guilds with 76 commands
+[7/10/2025, 8:37:10 AM] [ERROR] Uncaught Exception: Invalid Form Body
+content[BASE_TYPE_MAX_LENGTH]: Must be 2000 or fewer in length.
+[7/10/2025, 8:37:10 AM] [ERROR] DiscordAPIError[50035]: Invalid Form Body
+content[BASE_TYPE_MAX_LENGTH]: Must be 2000 or fewer in length.
+    at handleErrors (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:748:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1149:23)
+    at async SequentialHandler.queueRequest (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:980:14)
+    at async _REST.request (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\@discordjs\rest\dist\index.js:1293:22)
+    at async TextChannel.send (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\node_modules\discord.js\src\structures\interfaces\TextBasedChannel.js:195:15)
+    at async Object.execute (C:\Users\voidlegend\Documents\voidrift\voidrift-bot\dist\events\messageDelete.js:14:17)
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/10/2025, 9:48:30 AM] [INFO] Loading commands and events...
+[7/10/2025, 9:48:31 AM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/10/2025, 9:48:31 AM] [SUCCESS] Loaded 12 events
+[7/10/2025, 9:48:31 AM] [INFO] Starting VoidRift Bot...
+[7/10/2025, 9:48:32 AM] [SUCCESS] Bot logged in successfully!
+[7/10/2025, 9:48:32 AM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/10/2025, 9:48:32 AM] [INFO] Serving 1 guilds with 76 commands
+[7/10/2025, 9:48:42 AM] [COMMAND] voidlegendy used quest in The Developer Community
+[7/10/2025, 10:48:32 AM] [INFO] Bot Stats - Guilds: 1, Users: 2
+[7/10/2025, 11:48:33 AM] [INFO] Bot Stats - Guilds: 1, Users: 4
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║  ██╗   ██╗ ██████╗ ██╗██████╗ ██████╗ ██╗███████╗████████╗    ██████╗  ██████╗ ║
+║  ██║   ██║██╔═══██╗██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝    ██╔══██╗██╔═══██╗║
+║  ██║   ██║██║   ██║██║██║  ██║██████╔╝██║█████╗     ██║       ██████╔╝██║   ██║║
+║  ╚██╗ ██╔╝██║   ██║██║██║  ██║██╔══██╗██║██╔══╝     ██║       ██╔══██╗██║   ██║║
+║   ╚████╔╝ ╚██████╔╝██║██████╔╝██║  ██║██║██║        ██║       ██████╔╝╚██████╔╝║
+║    ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝       ╚═════╝  ╚═════╝ ║
+║                                                                                ║
+║                        Advanced Discord Bot Framework                          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+[7/10/2025, 8:37:31 PM] [INFO] Loading commands and events...
+[7/10/2025, 8:37:32 PM] [SUCCESS] Loaded 79 commands from 6 categories
+[7/10/2025, 8:37:32 PM] [SUCCESS] Loaded 12 events
+[7/10/2025, 8:37:32 PM] [INFO] Starting VoidRift Bot...
+[7/10/2025, 8:37:33 PM] [SUCCESS] Bot logged in successfully!
+[7/10/2025, 8:37:33 PM] [SUCCESS] Bot is ready! Logged in as VOIDRIFT#2539
+[7/10/2025, 8:37:33 PM] [INFO] Serving 1 guilds with 76 commands
+[7/10/2025, 9:37:33 PM] [INFO] Bot Stats - Guilds: 1, Users: 5
+[7/10/2025, 9:42:31 PM] [INFO] Received SIGINT, shutting down gracefully...

@@ -1,0 +1,11 @@
+{
+  "dndMessage": "Don't disturb please.",
+  "dryTriggers": [
+   
+  ],
+  "dryEmoji": "😐",
+  "stealth": false,
+  "macros": {},
+  "userTriggers": {},
+  "presenceActions": {}
+}
