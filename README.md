@@ -9,6 +9,7 @@ A powerful, modular Discord bot built with TypeScript and Discord.js v14, specif
 - **97 Total Commands**: Comprehensive command suite for all needs
 - **Cybersecurity Focus**: Security analysis, threat detection, and IT tools
 - **Dynamic Command Loading**: Add new commands by dropping files in the commands folder
+- **Slash Commands**: Use / commands for all features
 - **Modular Architecture**: Organized by categories (utility, fun, moderation, system, community, presence)
 - **Advanced Security**: User analysis, permission checking, and threat detection
 - **Comprehensive Moderation**: Full moderation suite with audit logging

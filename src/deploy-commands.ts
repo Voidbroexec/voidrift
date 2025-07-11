@@ -38,7 +38,6 @@ for (const file of commandFiles) {
   if (
     command &&
     command.options &&
-    command.options.slashCommand &&
     command.options.name &&
     command.options.description
   ) {
@@ -49,6 +48,12 @@ for (const file of commandFiles) {
         new SlashCommandBuilder()
           .setName(command.options.name)
           .setDescription(command.options.description)
+          .addStringOption(opt =>
+            opt
+              .setName('args')
+              .setDescription('Command arguments')
+              .setRequired(false)
+          )
           .toJSON()
       );
     }
@@ -72,4 +77,4 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
   } catch (error) {
     console.error(error);
   }
-})(); 
+})();
